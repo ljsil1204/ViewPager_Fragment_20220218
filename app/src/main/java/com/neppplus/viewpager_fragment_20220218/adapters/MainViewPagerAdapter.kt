@@ -3,13 +3,11 @@ package com.neppplus.viewpager_fragment_20220218.adapters
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.neppplus.viewpager_fragment_20220218.fragments.BirthYearFragment
-import com.neppplus.viewpager_fragment_20220218.fragments.HelloFragment
-import com.neppplus.viewpager_fragment_20220218.fragments.NameFragment
+import com.neppplus.viewpager_fragment_20220218.fragments.*
 
 class MainViewPagerAdapter (fm: FragmentManager) : FragmentPagerAdapter(fm) {
     override fun getCount(): Int {
-        return 3
+        return 5
     }
 
     override fun getItem(position: Int): Fragment {
@@ -20,8 +18,14 @@ class MainViewPagerAdapter (fm: FragmentManager) : FragmentPagerAdapter(fm) {
         else if (position == 1) {
             return BirthYearFragment()
          }
-        else {
+        else if (position == 2){
             return HelloFragment()
+         }
+        else if (position == 3) {
+            return  Etc1Fragment()
+         }
+        else {
+            return  Etc2Fragment()
          }
 
     }
