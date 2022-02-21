@@ -6,16 +6,14 @@ import androidx.fragment.app.FragmentPagerAdapter
 import com.neppplus.viewpager_fragment_20220218.fragments.*
 
 class MainViewPagerAdapter (fm: FragmentManager) : FragmentPagerAdapter(fm) {
-    override fun getCount() = 5
+    override fun getCount() = 3
 
     override fun getItem(position: Int): Fragment {
 
          return when(position) {
              0 -> NameFragment()
              1 -> BirthYearFragment()
-             2 -> HelloFragment()
-             3-> Etc1Fragment()
-             else -> Etc2Fragment()
+             else -> HelloFragment()
          }
 
 

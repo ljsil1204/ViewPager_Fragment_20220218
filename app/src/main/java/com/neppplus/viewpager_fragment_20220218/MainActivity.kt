@@ -31,6 +31,10 @@ class MainActivity : AppCompatActivity() {
 //        재사용성 무시하도록 하는 코드 예시 (사용성 개선)
         mainViewPager.offscreenPageLimit = 5
 
+
+//         탭레이아웃 / 뷰페이져 연결
+        mainTabLayout.setupWithViewPager(mainViewPager)
+
     }
 
 
