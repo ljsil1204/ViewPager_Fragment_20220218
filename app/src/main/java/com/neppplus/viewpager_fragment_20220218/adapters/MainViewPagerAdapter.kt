@@ -12,21 +12,14 @@ class MainViewPagerAdapter (fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     override fun getItem(position: Int): Fragment {
 
-         if (position == 0) {
-             return NameFragment()
+         return when(position) {
+             0 -> NameFragment()
+             1 -> BirthYearFragment()
+             2 -> HelloFragment()
+             3-> Etc1Fragment()
+             else -> Etc2Fragment()
          }
-        else if (position == 1) {
-            return BirthYearFragment()
-         }
-        else if (position == 2){
-            return HelloFragment()
-         }
-        else if (position == 3) {
-            return  Etc1Fragment()
-         }
-        else {
-            return  Etc2Fragment()
-         }
+
 
     }
 }
