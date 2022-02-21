@@ -6,9 +6,7 @@ import androidx.fragment.app.FragmentPagerAdapter
 import com.neppplus.viewpager_fragment_20220218.fragments.*
 
 class MainViewPagerAdapter (fm: FragmentManager) : FragmentPagerAdapter(fm) {
-    override fun getCount(): Int {
-        return 5
-    }
+    override fun getCount() = 5
 
     override fun getItem(position: Int): Fragment {
 
